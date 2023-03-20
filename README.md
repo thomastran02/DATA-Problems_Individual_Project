@@ -4,8 +4,7 @@
 
 # Spotify Million Playlist Dataset
 
-* **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
-"Get Rich" Kaggle challenge (provide link). 
+* **One Sentence Summary** This repository holds an attempt to build a recommendation system for Spotify users based on the Spotify Million Playlist Dataset. (https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge#task). 
 
 ## Overview
 
