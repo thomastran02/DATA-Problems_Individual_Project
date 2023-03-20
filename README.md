@@ -1,6 +1,8 @@
-![](UTA-DataScience-Logo.png)
+# DATA-Problems_Individual_Project
 
-# Project Title
+![image](https://user-images.githubusercontent.com/98187543/226465520-2d0820b4-ed17-44d7-afaa-5fccf149c778.png)
+
+# Spotify Million Playlist Dataset
 
 * **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
 "Get Rich" Kaggle challenge (provide link). 
