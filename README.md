@@ -8,10 +8,10 @@
 
 ## Overview
 
-* This section could contain a short paragraph which include the following:
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+  * **Definition of the tasks / challenge:** The task is to build a recommendation system for Spotify Playlist. Each playlist in the training set contains between 5-100 tracks.
+  * **Approach:** This repository contains two approaches toward the problem, the first one utilized creating a matrix with implicit ratings of each track in the playlist for each user. Then, using a cosine similarity score to determine which track to recommend to the user. The second approach uses probability of recommending a track/artist given another track/artist is in the playlist as well.
+  
+  * **Summary of the performance achieved** Compare the two different methods on a test set that takes out a certain amount of tracks and sees how accurately the recommendation system works.
 
 ## Summary of Workdone
 
