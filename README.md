@@ -21,10 +21,9 @@ Include only the sections that are relevant an appropriate.
 
 * Data:
   * Type: For example
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+    * Input: a row containing ratings from a user for each track.
+  * Size: The total size of the challenge dataset is 10,000 playlists. 
+  * Instances (Train, Test, Validation Split): Used approximately 900 playlist for training the recommendation system and use about 100 playlist for testing.
 
 #### Preprocessing / Clean up
 
