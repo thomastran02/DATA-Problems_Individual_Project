@@ -20,20 +20,23 @@ Include only the sections that are relevant an appropriate.
 ### Data
 
 * Data:
-  * Type: For example
+  * Type:
     * Input: a row containing ratings from a user for each track.
   * Size: The total size of the challenge dataset is 10,000 playlists. 
   * Instances (Train, Test, Validation Split): Used approximately 900 playlist for training the recommendation system and use about 100 playlist for testing.
 
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+* Worked on a subset of the full dataset (about 10% of the full dataset) to reduce computation time.
+* Reformatted the data by creating a matrix where each row is a user and each column contains an implicit rating for each track. The implicit rating was found by how many times the artist appears in relation to the size of the track.
 
 #### Data Visualization
 
 Show a few visualization of the data and say a few words about what you see.
 
 ### Problem Formulation
+(Use K-Nearest Neighbor)
+![image](https://user-images.githubusercontent.com/98187543/228328679-baa2cabe-a8e6-4e2f-88e8-dc69f127ecb3.png)
 
 * Define:
   * Input / Output
