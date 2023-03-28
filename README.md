@@ -23,7 +23,7 @@ Include only the sections that are relevant an appropriate.
   * Type:
     * Input: a row containing ratings from a user for each track.
   * Size: The total size of the challenge dataset is 10,000 playlists. 
-  * Instances (Train, Test, Validation Split): Used approximately 900 playlist for training the recommendation system and use about 100 playlist for testing.
+  * Instances: Use 900 playlist for training the recommendation system and use 100 playlist for testing.
 
 #### Preprocessing / Clean up
 
