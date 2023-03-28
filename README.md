@@ -21,14 +21,14 @@ Include only the sections that are relevant an appropriate.
 
 * Data:
   * Type:
-    * Input: a row containing ratings from a user for each track.
+    * Input: Row containing ratings from a user for each track.
   * Size: The total size of the challenge dataset is 10,000 playlists. 
   * Instances: Use 900 playlist for training the recommendation system and use 100 playlist for testing.
 
 #### Preprocessing / Clean up
 
 * Worked on a subset of the full dataset (about 10% of the full dataset) to reduce computation time.
-* Reformatted the data by creating a matrix where each row is a user and each column contains an implicit rating for each track. The implicit rating was found by how many times the artist appears in relation to the size of the track.
+* Reformatted the data by creating a matrix where each row is a user and each column contains an implicit rating for each track. The implicit rating was found by how many times the artist appears in relation to the size of the track. Therefore, ratings for each track must be between 0 and 1.
 
 #### Data Visualization
 
@@ -43,7 +43,10 @@ Show a few visualization of the data and say a few words about what you see.
     * Using cosine similarity, can find the similarity scores between users. The cosine similarity score is given by:
 ![image](https://user-images.githubusercontent.com/98187543/228328679-baa2cabe-a8e6-4e2f-88e8-dc69f127ecb3.png)
     * After finding the similarity scores for each user, can use K-nearest neighbor algorithm to determine which track to recommend.
+    * Hyperparameter: K = 10??
   * Loss, Optimizer, other Hyperparameters.
+
+* Method 2:
 
 ### Training
 
