@@ -35,13 +35,14 @@ Include only the sections that are relevant an appropriate.
 Show a few visualization of the data and say a few words about what you see.
 
 ### Problem Formulation
-(Use K-Nearest Neighbor)
-![image](https://user-images.githubusercontent.com/98187543/228328679-baa2cabe-a8e6-4e2f-88e8-dc69f127ecb3.png)
 
-* Define:
-  * Input / Output
+* Method 1: (Use K-Nearest Neighbor)
+  * Input: User ratings for each track
+  * Output: Predict ratings for tracks user hasn't rated
   * Models
-    * Describe the different models you tried and why.
+    * Using cosine similarity, can find the similarity scores between users. The cosine similarity score is given by:
+![image](https://user-images.githubusercontent.com/98187543/228328679-baa2cabe-a8e6-4e2f-88e8-dc69f127ecb3.png)
+    * After finding the similarity scores for each user, can use K-nearest neighbor algorithm to determine which track to recommend.
   * Loss, Optimizer, other Hyperparameters.
 
 ### Training
