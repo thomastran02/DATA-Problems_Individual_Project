@@ -62,7 +62,7 @@ Show a few visualization of the data and say a few words about what you see.
 * Method 2:
   * This method involved an algorithm that attempted to factor the rating matrix into 2 smaller matrices which attempt to represent 10 unknown features for the users and items.
   * Training involved using a maximum of 5000 iterations, a learning rate of 0.001 and a regularation parameter of 0.01. The algorithm stopped early if the error reached 0.001.
-  * At first tried to involve using 5000 iterations, a learning rate of 0.001 and a regularation parameter of 0.01 with an early stopping 0.001. However, using these parameter was taking a very long time to train and so the parameters were changed to 100 iterations, learning rate 0.01, regularation parameter 0.01 and early stopping 0.01 to reduce training time.
+  * At first tried to involve using 5000 iterations, a learning rate of 0.001 and a regularation parameter of 0.01 with an early stopping 0.001. However, using these parameter was taking days to train and so the parameters were changed to 100 iterations, learning rate 0.01, regularation parameter 0.01 and early stopping 0.01 to reduce training time.
 
 * One challenge with this dataset was the size of the original dataset, my current system does not have the capacity to run the algorithm that I created on the whole dataset and therefore required me to take a subset of the data. Even using a subset of the original dataset the training still took a long time.
 
