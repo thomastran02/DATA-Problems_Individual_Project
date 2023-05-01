@@ -74,61 +74,62 @@ Show a few visualization of the data and say a few words about what you see.
 
   * 100 playlist that contained 100 tracks were chosen randomly from the original dataset and 50 randomly selected tracks were removed from these playlist.
   * Then utilizing the top 5 recommended tracks a precision score was found based on the number of tracks recommended that were in the original playlist.
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
+![image](https://user-images.githubusercontent.com/98187543/235493315-3a972532-b104-41eb-865e-a0f0b05e76bb.png)
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+* Based on our results the cosine similarity method with k=3 produced the best precision with 0.15 and a run time of 1.31 seconds. However, I think method 2 can be better optimized and tune the hyperparameters to fit the problem better. The adjustments I made in this attempt were due to a lack of computation power and modified to reduce run time.
 
 ### Future Work
 
-* Training for method 2 can definitely be reduced by utilizing the tensor flow library as opposed to just numpy library. Therefore, the next step would involve optimizing the ideas utilized in this repository to decrease the training time significantly.
+* Training for method 2 can be reduced by utilizing the tensor flow library as opposed to just numpy library. Therefore, the next step would involve optimizing the ideas utilized in this repository to decrease the training time significantly as well as optimizing the hyperparameters for method 2.
+* Furthermore, the more in depth challenge utilizes the names of the playlist and sentiment analysis to attempt to recommend songs based on the correlation between songs.
 
 ## How to reproduce results
 
-* In this section, provide instructions at least one of the following:
-   * Reproduce your results fully, including training.
-   * Apply this package to other data. For example, how to use the model you trained.
-   * Use this package to perform their own study.
-* Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
+* The main challenge with this particular problem involved the preprocessing stage and creating a rating matrix based on how the users interacted with the items.
+* This attempt utilized an implicit rating, by counting the number of times a particular artist appeared in a playlist and associating it with their song to give a rating, then normalizing that result. For example, if one artist's songs appear 2 times in a playlist that contains 5 songs, each of the 2 songs will receive a rating of 0.4. This implicit rating was then used to create the rating matrix.
+* For method 1, utilize some similarity metric to create a similarity score between users. This repository utilized the cosine similarity.
+* For method 2, develop an algorithm possibly using tensor flow or some deep learning model to attempt to factor the rating matrix into 2 matrices that contain hidden features for the users and the items.
 
 ### Overview of files in repository
 
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
-* An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
-  * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-  * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
-  * training-model-1.ipynb: Trains the first model and saves model during training.
-  * training-model-2.ipynb: Trains the second model and saves model during training.
-  * training-model-3.ipynb: Trains the third model and saves model during training.
-  * performance.ipynb: loads multiple trained models and compares results.
-  * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
+* List of files:
+  * Cosine_Similarity.ipynb: contains the algorithms and code that was utilized in method 1 in this repository
+  * Matrix_Factorization.ipynb: contains algorithms and code that was utilized in method 2 in this repository
+  * Data_Visualization.ipynb: Some tables and visualizations of the correlation between certain artist within the playlists.
 
 ### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+* Standard libraries used
 
 ### Data
-
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
+* The data can be found at: https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge#task
 
 ### Training
 
-* Describe how to train the model
-
-#### Performance Evaluation
-
-* Describe how to run the performance evaluation.
-
+* No training necessarily involved in method 1
+* Future attempts of method 2 should attempt to utilize the tensor flow library to reduce run time, tune hyperparameters and better optimize the results.
 
 ## Citations
 
-* Provide any references.
+https://www.geeksforgeeks.org/pandas-parsing-json-dataset/
+
+https://www.youtube.com/watch?v=xySjbVUgAwU
+
+C.W. Chen, P. Lamere, M. Schedl, and H. Zamani. Recsys Challenge 2018: Automatic Music Playlist Continuation. In Proceedings of the 12th ACM Conference on Recommender Systems (RecSys ’18), 2018.
+
+https://developers.google.com/machine-learning/recommendation/collaborative/basics
+
+https://www.youtube.com/watch?v=ZspR5PZemcs
+
+https://developers.google.com/machine-learning/recommendation/collaborative/basics
+
+https://pynative.com/python-save-dictionary-to-file/
+
+https://towardsdatascience.com/collaborative-filtering-based-recommendation-systems-exemplified-ecbffe1c20b1
+
+https://www.youtube.com/watch?v=cxcFi3RDrEw
+
+https://towardsdatascience.com/recommendation-systems-explained-a42fc60591ed
+
+https://www.youtube.com/watch?v=DYj4T4SZAQc
