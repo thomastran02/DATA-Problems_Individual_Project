@@ -46,7 +46,7 @@ Show a few visualization of the data and say a few words about what you see.
 
 * Method 2: Matrix Factorizaion
   * Input: Rating matrix
-  * Output: 2 Matrices who's dot product attempts to mimic user behaviour by predicting features of users and items
+  * Output: 2 Matrices who's dot product mimics user behaviour by predicting features of users and items
   * Models
     * Assuming 10 features attemps to factor the matrix into n*10 and 10*m matrix:
  ![image](https://user-images.githubusercontent.com/98187543/235410195-171efae9-e2d4-4b44-b4c7-0052f4c61c12.png)
