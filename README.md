@@ -29,10 +29,6 @@
 * Reformatted the data by creating a matrix where each row is a user and each column contains an implicit rating for each track. The implicit rating was found by how many times the artist appears in relation to the size of the track. Therefore, ratings for each track must be between 0 and 1.
 * The preprocessing / Clean up portion of this task accounts for the bulk of the work, one reason is because of the size of the original dataset had to be reduced to fit my system. Another reason is because it required having to create a rating matrix as it is not explicitly given.
 
-#### Data Visualization
-
-Show a few visualization of the data and say a few words about what you see.
-
 ### Problem Formulation
 
 * Method 1: K-Nearest Neighbor Algorithm Cosine Similarity
